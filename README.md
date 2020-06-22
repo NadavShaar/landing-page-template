@@ -6,7 +6,7 @@ My leftovers are:
 - contact section (1/2 day)
 - refactoring (2 days)
 
-Only when i'm done with the refactoring (that should be ease the process of making the layout to be responsive,
+Only when i'm done with the refactoring (that should be ease the process of making the layout responsive,
 we will start to add assignment for everyone.
 
 In the mean while what can be done is:
