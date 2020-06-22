@@ -4,6 +4,7 @@ I am still working on a sketch for the desktop layout,
 Please don't change any html & css files until it will be ready.
 My leftovers are:
 - contact section & navigation (1 day)
+- animations (1 day)
 - refactoring (2 days)
 
 Only when i'm done with the refactoring (that should be ease the process of making the layout responsive,
