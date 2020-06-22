@@ -1,33 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>The anding Page</title>
-
-    <style>
-      html, body{
-        height: 100%;
-        margin: 0;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 100;
-      }
-      #app{
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        
-      }
-      *, *::before, *::after{
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-      }
-    </style>
-</head>
-<body>
-    <div id="app"></div>
-    <script src="dist/main.bundle.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo_wrapper">
+                <img class="logo" src="./assets/logo.png" />
+                <span>The Expendables</span>
+            </div>
+        </nav>
+        <main class="main">
+            <header class="header">
+                <section class="header_banner">
+                    <div class="header_banner_content">
+                        <h1 class="title header_title">Skyrocket your apps</h1>
+                        <h2 class="sub_title">Take your ideas to the next level</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="button_1">Read More</button>
+                    </section>
+                    <section class="sec_1">
+    
+                    </div>
+                </section>
+                <div class="header_gradient"></div>
+                <div class="header_image_wrapper">
+                    <div class="shape_1"></div>
+                    <img class="header_image" src="./assets/4.png" />
+                </div>
+                <svg class="header_shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="shape-waves" style="left: 0; transform: rotate3d(0,1,0,180deg);"><path class="shape-fill shape-fill-contrast" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
+            </header>
+            <section class="section">
+                <div class="flex_child intro_section">
+                    <h3 class="section_title">Focus on your success</h3>
+                    <h3 class="content_sub_title">let us do the hard work</h3>
+                    <p class="para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="flex_child">
+                </div>
+            </section>
+            <section class="section tech">
+                <div class="shape_4"></div>
+                <div class="flex_column flex_child">
+                    <div class="tech_card paper">
+                        <div class="tech_card_left">
+                            <h3 class="content_title">Industry leading</h3>
+                            <h3 class="content_sub_title">technology stack</h3>
+                            <p class="para">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                            </p>
+                            <img src="./assets/webpack.svg" />
+                        </div>
+                        <div class="tech_card_right">
+                            <img src="./assets/javascript.svg" />
+                            <img src="./assets/es6.svg" />
+                            <img src="./assets/node-sass.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_column flex_child tech_right">
+                    <img class="tech_globe_img" src="./assets/tech-globe.svg" />
+                    <h3 class="content_title">A complete technology stack</h3>
+                    <h3 class="content_sub_title">awaits for you</h3>
+                    <p class="para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                    </p>
+                    <div class="flex flex-child tech_details">
+                        <div class="flex_child flex_column">
+                            <div class="tech_detail">
+                                <span class="tech_detail_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity stroke-primary" style="stroke: #8ed6fb"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                                </span>
+                                <div class="flex_column flex_child">
+                                    <span class="tech_detail_label">Activity</span>
+                                    <p class="para">Flexible hours</p>
+                                </div>
+                            </div>
+                            <div class="tech_detail">
+                                <span class="tech_detail_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap stroke-primary"  style="stroke: #8ed6fb"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                                </span>
+                                <div class="flex_column flex_child">
+                                    <span class="tech_detail_label">Fast</span>
+                                    <p class="para">development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_child flex_column">
+                            <div class="tech_detail">
+                                <span class="tech_detail_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud stroke-primary"  style="stroke: #8ed6fb"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
+                                </span>
+                                <div class="flex_column flex_child">
+                                    <span class="tech_detail_label">Deploy</span>
+                                    <p class="para">Your project</p>
+                                </div>
+                            </div>
+                            <div class="tech_detail">
+                                <span class="tech_detail_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon stroke-primary" style="stroke: #8ed6fb"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                                </span>
+                                <div class="flex_column flex_child">
+                                    <span class="tech_detail_label">Delivery</span>
+                                    <p class="para">on time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="services_background">
+                <section class="section">
+                    <div class="shape_2"></div>
+                    <div class="shape_3"></div>
+                    <div class="flex_column flex_child services_container">
+                        <span class="section_intro_title">All you need in one place</span>
+                        </p>
+                        <div class="flex flex_child services_row">
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/plan.svg" />
+                                <span class="service_title">strategy</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/cup.svg" />
+                                <span class="service_title">awards</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/target.svg" />
+                                <span class="service_title">target</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex_child services_row">
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/clock.svg" />
+                                <span class="service_title">time management</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/growth.svg" />
+                                <span class="service_title">growth</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                            <div class="flex_child service">
+                                <img class="service_icon" src="assets/icons/test.svg" />
+                                <span class="service_title">testing</span>
+                                <p class="para service_para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="background_section">
+                <div class="header_gradient"></div>
+                <svg class="background_section_top_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#f9fbfd" fill-opacity="1" d="M0,288L120,282.7C240,277,480,267,720,218.7C960,171,1200,85,1320,42.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+                </svg>
+                <svg class="background_section_top_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,256L120,229.3C240,203,480,149,720,138.7C960,128,1200,160,1320,176L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+                </svg>
+            </div>
+            <section class="section exp_section">
+                <div class="flex_column flex_child exp_info">
+                    <h3 class="section_title">We got you covered</h3>
+                    <p class="para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+                    </p>
+                </div>
+                <div class="flex_child flex">
+                    <div class="flex_child flex_column exp_row">
+                        <div class="flex flex_child">
+                            <span class="exp_amount">2,056</span>
+                            <span class="exp_topic">hours</span>
+                        </div>
+                        <span class="exp_topic">ReactJS</span>
+                    </div>
+                    <div class="flex_child flex_column exp_row">
+                        <div class="flex flex_child">
+                            <span class="exp_amount">6,112</span>
+                            <span class="exp_topic">hours</span>
+                        </div>
+                        <span class="exp_topic">JavaScript | ES6</span>
+                    </div>
+                    <div class="flex_child flex_column exp_row">
+                        <div class="flex flex_child">
+                            <span class="exp_amount">396</span>
+                            <span class="exp_topic">hours</span>
+                        </div>
+                        <span class="exp_topic">NodeJS</span>
+                    </div>
+                    <div class="flex_child flex_column exp_row">
+                        <div class="flex flex_child">
+                            <span class="exp_amount">112</span>
+                            <span class="exp_topic">projects</span>
+                        </div>
+                        <span class="exp_topic">Webpack</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section about_section">
+                <div class="flex_column flex_child">
+                    <div class="flex flex_child">
+                        <div class="flex flex_child about_section_left">
+                            <svg class="shape h-100 selected_team_background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
+                                <g id="Capa_2" data-name="Capa 2"><g id="OBJECTS"><path class="cls-1" d="M236.5,78.38a75.26,75.26,0,0,0-7.74-9.67l0,0S182.91,16.47,105.14,2l0,0A83.91,83.91,0,0,0,4.53,69.71C-11.34,147,19.55,209,19.73,209.4a75,75,0,0,0,6,10.77c19.06,28.33,54.33,39.57,86.73,30.43,0,0,52.47-12.9,111.35-71.37h0C251.68,152.56,257.84,110.1,236.5,78.38Z"></path></g></g>
+                            </svg>
+                            <div class="flex_column about_selected_member_container">
+                                <img class="about_selected_member_avatar" src="./assets/team/yakov.jpg" />
+                                <h3 class="content_title">Yakov Rakhamimov</h3>
+                                <h3 class="content_sub_title">Front-End developer</h3>
+                                <p class="para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                                <div class="flex flex_child about_selected_member_social">
+                                    <a herf="#" target="_blank" class="social_icon">
+                                        <img class="about_map_img" src="./assets/social-icons/facebook.svg" />
+                                    </a>
+                                    <a herf="#" target="_blank" class="social_icon">
+                                        <img class="about_map_img" src="./assets/social-icons/pinterest.svg" />
+                                    </a>    
+                                    <a herf="#" target="_blank" class="social_icon">
+                                        <img class="about_map_img" src="./assets/social-icons/linkedin.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_column flex_child">
+                            <div class="flex_column flex_child about_info">
+                                <h3 class="content_title">Who are we?</h3>
+                                <h3 class="content_sub_title">The team behind the magic</h3>
+                                <p class="para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                            </div>
+                            <div class="flex_child about_map_wrapper">
+                                <img class="about_map_img" src="./assets/map.svg" />
+                                <img class="about_team_img about_team_img_1" src="./assets/team/ido.jpg" title="Ido Ofir" />
+                                <img class="about_team_img about_team_img_2" src="./assets/team/nadav.jpg" title="Nadav Shaar" />
+                                <img class="about_team_img about_team_img_3" src="./assets/team/ilay.jpg" title="Ilay Ofir" />
+                                <img class="about_team_img about_team_img_4" src="./assets/team/yoav.jpg" title="Yoav Leshem" />
+                                <img class="about_team_img about_team_img_5" src="./assets/team/ziv.jpg" title="Ziv Zerr" />
+                                <img class="about_team_img about_team_img_6" src="./assets/team/yakov.jpg" title="Yakov Rakhamimov" />
+                            </div>
+                        </>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
