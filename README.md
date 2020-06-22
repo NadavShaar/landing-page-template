@@ -11,3 +11,4 @@ we will start to add assignment for everyone.
 
 In the mean while what can be done is:
 - writing content (by design - try to minimize design changes since it will add more time for development).
+- server
