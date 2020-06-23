@@ -611,6 +611,11 @@ h1, h2, h3, h4, h5, p {
     transform: translateY(-5px);
 }
 
+.contact_section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .contact_section .paper {
     padding: 0px;
     box-shadow: 0 1rem 3rem rgba(22,28,45,.175);
