@@ -7,7 +7,7 @@ My leftovers are:
 - animations (1/2 day)
 - refactoring (2 days)
 
-Only when i'm done with the refactoring (that should be ease the process of making the layout responsive,
+Only when i'm done with the refactoring (that should ease the process of making the layout responsive,
 we will start to add assignment for everyone.
 
 In the mean while what can be done is:
