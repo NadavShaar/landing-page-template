@@ -306,7 +306,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="section contact_section">
+            <section id="contact"  class="section contact_section">
                 <div class="section_inner contact_inner flex_row">
                     <div class="flex_row flex_column_reverse_mobile">
                         <div class="flex_row contact_left">
@@ -315,18 +315,19 @@
                             <div class="flex_column paper">
                                 <img src="./assets/take-off.jpg" />
                                 <div class="contact_form_container">
-                                    <form class="form" novalidate="novalidate">
+                                    <!-- <form class="form" novalidate="novalidate"> -->
+                                    <form class="form" action="mailto:nadavshaar@gmail.com" method="post" enctype="text/plain" >
                                         <div class="form-group">
                                             <label for="name" class="form_control_label">Name</label> 
-                                            <input type="text" class="form_control" id="name" placeholder="Name">
+                                            <input type="text" class="form_control" id="name">
                                         </div>
                                         <div class="form-group">
                                             <label for="email" class="form_control_label">Email</label> 
-                                            <input type="email" class="form_control" id="email" placeholder="Email">
+                                            <input type="email" class="form_control" id="email">
                                         </div>
                                         <div class="form-group">
                                             <label for="company" class="form_control_label">Company</label> 
-                                            <input type="text" class="form_control" id="company" placeholder="Company">
+                                            <input type="text" class="form_control" id="company">
                                         </div>
                                         <div class="form-group mt-5">
                                             <button class="button" type="submit">send</button>

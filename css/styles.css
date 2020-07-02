@@ -133,12 +133,12 @@ html, body {
 .background_image {
     font-size: 0;
     position: relative;
-    background-position: 0% 0%;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: 50% 0%;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
     background-image: url(../assets/header.jpg);
-    -webkit-animation: backgroundMove 12s linear infinite alternate;
-            animation: backgroundMove 12s linear infinite alternate;
+    -webkit-animation: backgroundMove 15s linear infinite alternate;
+            animation: backgroundMove 15s linear infinite alternate;
 }
 
 .background_image::before {
@@ -962,19 +962,19 @@ html, body {
 
 @-webkit-keyframes backgroundMove {
     0% {
-        background-position: 0% 0%;
+        background-position: 50% 0%;
     }
     100% {
-        background-position: 100% 100%;
+        background-position: 50% 100%;
     }
 }
 
 @keyframes backgroundMove {
     0% {
-        background-position: 0% 0%;
+        background-position: 50% 0%;
     }
     100% {
-        background-position: 100% 100%;
+        background-position: 50% 100%;
     }
 }
 
