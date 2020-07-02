@@ -823,6 +823,9 @@ html, body {
     width: 48px;
     top: 0%;
     left: 34%;
+}
+
+.about_team_img_bounce {
     -webkit-box-shadow: var(--shadow-3);
             box-shadow: var(--shadow-3);
     -webkit-animation: memberFloat 1.5s ease-in-out infinite;
