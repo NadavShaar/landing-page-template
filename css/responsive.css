@@ -34,9 +34,8 @@
     }
 
     .rocket_container {
-        position: absolute;
         right: 8%;
-        bottom: -40px;
+        bottom: -40%;
         width: 350px;
         height: 340px;
     }
@@ -162,9 +161,7 @@
     }
 
     .rocket_container {
-        position: absolute;
         right: 20px;
-        bottom: 20px;
         width: 220px;
         height: 220px;
     }
@@ -363,7 +360,7 @@
 @media only screen and (max-width: 769px) {
 
     .rocket_container {
-        bottom: 20px;
+        bottom: -30%;
         width: 180px;
         height: 180px;
     }
@@ -523,7 +520,7 @@
         position: absolute;
         top: 25px;
         width: 40px;
-        left: 310px;
+        left: 290px;
     }
 
     .service {
@@ -649,19 +646,59 @@
     }
 
     .sun_shape {
-        bottom: -10%;
+        bottom: unset;
+        top: -6%;
+        right: 34%;
+        width: 320px;
+        height: 320px;
     }
 
     .contact_decor_dots {
-        right: 17px;
-        top: -50px;
+        top: -140px;
+        right: -20px;
+        width: 200px;
+        right: 20px;
+    }
+
+    .clouds_container {
+        min-height: 200px;
+    }
+
+    .cloud_1 {
+        -webkit-transform: scale(.85);
+            -ms-transform: scale(.85);
+                transform: scale(.85);
+        left: 0;
+    }
+
+    .cloud_2 {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
+    }
+
+    .cloud_3 {
+        -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+                transform: scale(.7);
+    }
+
+    .contact_section {
+        margin-bottom: 40px;
+    }
+
+    .contact_left {
+        padding-right: 0px;
+    }
+
+    .about_info {
+        padding: 20px 0px;
     }
     
 }
 
 @media only screen and (max-width: 601px) {
     .rocket_container {
-        bottom: 0px;
         width: 120px;
         height: 120px;
     }
@@ -709,8 +746,8 @@
 
     .tech_globe_img {
         top: 25px;
-        width: 30px;
-        left: 310px;
+        width: 35px;
+        left: 290px;
     }
 
     .tech_decor_dots {
@@ -753,50 +790,9 @@
         padding: 30px 0px;
     }
 
-    .contact_left {
-        padding-right: 0px;
-    }
-
     .contact_left .paper {
         -webkit-box-shadow: var(--shadow-3);
                 box-shadow: var(--shadow-3);
-    }
-
-    .sun_shape {
-        bottom: unset;
-        top: -6%;
-        right: 34%;
-        width: 320px;
-        height: 320px;
-    }
-
-    .contact_decor_dots {
-        top: -140px;
-        width: 200px;
-        right: 20px;
-    }
-
-    .clouds_container {
-        min-height: 200px;
-    }
-
-    .cloud_1 {
-        -webkit-transform: scale(.85);
-            -ms-transform: scale(.85);
-                transform: scale(.85);
-        left: 0;
-    }
-
-    .cloud_2 {
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1);
-    }
-
-    .cloud_3 {
-        -webkit-transform: scale(.7);
-            -ms-transform: scale(.7);
-                transform: scale(.7);
     }
 
     .nav {
@@ -807,39 +803,18 @@
 
 @media only screen and (max-width: 481px) {
     .rocket_container {
-        bottom: 10px;
         width: 90px;
         height: 90px;
-    }
-
-    .big_title {
-        font-size: 26px;
-        line-height: 28px;
-    }
-
-    .light_sub_title {
-        font-size: 16px;
-        line-height: 18px;
     }
 
     .para {
         font-size: 12px;
     }
 
-    .button {
-        height: 24px;
-        font-size: 9px;
-        width: 100px;
-    }
-
-    .text_block_main_title {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
     .text_block_sub_title {
-        line-height: 18px;
-        font-size: 14px;
+        line-height: 20px;
+        font-size: 16px;
+        padding-bottom: 5px;
     }
 
     .intro_section {
@@ -877,26 +852,23 @@
         height: 16px;
     }
 
-    .button {
-        margin-top: 30px;
-    }
-
     .about_shape {
         height: 280px;
     }
 
     .about_selected_member_container {
-        top: 60px;
+        top: 50px;
         padding-right: 0;
     }
 
     .about_selected_member_avatar {
         width: 60px;
         height: 60px;
+        margin-top: 5px;
     }
 
     .about_selected_member_social {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .about_section_left {
@@ -927,15 +899,26 @@
         width: 35px;
     }
 
-    .tech_globe_img {
-        left: 250px;
-    }
-
     .cloud_2 {
         left: 40%;
     }
 
     .contact_section {
         padding: 30px 0px 10px;
+    }
+
+    .sun_shape {
+        width: 260px;
+        height: 260px;
+    }
+
+    .contact_decor_dots {
+        width: 160px;
+        right: -20px;
+    }
+
+    .tech_globe_img {
+        width: 30px;
+        left: 260px;
     }
 }

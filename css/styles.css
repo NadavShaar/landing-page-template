@@ -443,7 +443,7 @@ html, body {
 .rocket_container {
     position: absolute;
     right: 3%;
-    bottom: -120px;
+    bottom: -50%;
     width: 530px;
     height: 500px;
 }
@@ -467,6 +467,10 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
+}
+
+.tech_details {
+    margin-top: 20px;
 }
 
 .tech_card_left {
