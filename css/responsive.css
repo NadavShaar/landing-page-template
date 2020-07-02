@@ -818,8 +818,8 @@
     }
 
     .intro_section {
-        min-height: 420px;
-        max-height: 420px;
+        min-height: 400px;
+        max-height: 400px;
     }
 
     .tech_detail_label {
@@ -920,5 +920,34 @@
     .tech_globe_img {
         width: 30px;
         left: 260px;
+    }
+
+    .big_title {
+        font-size: 24px;
+        line-height: 26px;
+        padding-bottom: 5px;
+    }
+
+    .light_sub_title {
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 5px;
+    }
+
+    .logo_label {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .form_control {
+        padding: 2px 10px;
+        font-size: 14px;
+    }
+
+    .form_control_label {
+        font-size: 14px;
     }
 }
