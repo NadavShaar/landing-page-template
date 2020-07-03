@@ -784,11 +784,11 @@ html, body {
 }
 
 .about_team_img:hover {
-    -webkit-box-shadow: var(--shadow-2);
-            box-shadow: var(--shadow-2);
-    -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-box-shadow: var(--shadow-5);
+            box-shadow: var(--shadow-5);
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
 }
 
 .about_team_img_1 {
