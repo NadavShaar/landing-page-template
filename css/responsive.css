@@ -205,7 +205,6 @@
     .tech_detail_icon {
         width: 40px;
         height: 40px;
-        padding: 10px;
     }
 
     .tech_detail_icon > svg {
@@ -805,6 +804,7 @@
     .rocket_container {
         width: 90px;
         height: 90px;
+        bottom: -20%;
     }
 
     .para {
@@ -837,14 +837,9 @@
         font-size: 16px;
     }
 
-    .service_icon {
-        width: 60px;
-    }
-
     .tech_detail_icon {
         width: 32px;
         height: 32px;
-        padding: 8px;
     }
 
     .tech_detail_icon > svg {
@@ -908,8 +903,8 @@
     }
 
     .sun_shape {
-        width: 260px;
-        height: 260px;
+        width: 240px;
+        height: 240px;
     }
 
     .contact_decor_dots {

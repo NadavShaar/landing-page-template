@@ -562,8 +562,10 @@ html, body {
     height: 56px;
     border-radius: 4px;
     background: var(--light-background);;
-    padding: 15px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech_detail_label {

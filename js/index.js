@@ -73,35 +73,52 @@ var team = [
     }
 ]
 
-    function displayMember(memberName) {
-        let memberIndex = team.findIndex(m => m.name === memberName);
-        let member = team[memberIndex];
-        document.querySelector('.about_selected_member_container .about_selected_member_avatar').src = "./assets/team/" + member.img;
-        document.querySelector('.about_selected_member_container .text_block_main_title').innerHTML = member.name;
-        document.querySelector('.about_selected_member_container .text_block_sub_title').innerHTML = member.role;
-        document.querySelector('.about_selected_member_container .para').innerHTML = member.description;
-        document.querySelector(`.about_team_img.about_team_img_bounce`).classList.remove('about_team_img_bounce');
-        document.querySelector(`.about_team_img.about_team_img_${memberIndex + 1}`).classList.add('about_team_img_bounce');
-        document.querySelector(`.about_selected_member_social`).innerHTML = '';
-        let linkImg = document.createElement('img');
-        linkImg.setAttribute('src', `./assets/social-icons/${member.socialLinks[0].src}`);
-        let newlink = document.createElement('a');
-        newlink.setAttribute('class', 'about_social_icon');
-        newlink.setAttribute('target', '_blank');
-        newlink.setAttribute('href', member.socialLinks[0].href);
-        newlink.append(linkImg);
-        document.querySelector(`.about_selected_member_social`).appendChild(newlink);
-        // document.querySelector('.about_selected_member_container .about_selected_member_social').innerHTML = (
-        //     <div class="flex_row about_selected_member_social">
-        //         <a herf="#" target="_blank" class="about_social_icon">
-        //             <img src="./assets/social-icons/facebook.svg" />
-        //         </a>
-        //         <a herf="#" target="_blank" class="about_social_icon">
-        //             <img src="./assets/social-icons/pinterest.svg" />
-        //         </a>
-        //         <a herf="#" target="_blank" class="about_social_icon">
-        //             <img src="./assets/social-icons/linkedin.svg" />
-        //         </a>
-        //     </div>
-        // );
-    }
+function displayMember(memberName) {
+    let memberIndex = team.findIndex(m => m.name === memberName);
+    let member = team[memberIndex];
+    document.querySelector('.about_selected_member_container .about_selected_member_avatar').src = "./assets/team/" + member.img;
+    document.querySelector('.about_selected_member_container .text_block_main_title').innerHTML = member.name;
+    document.querySelector('.about_selected_member_container .text_block_sub_title').innerHTML = member.role;
+    document.querySelector('.about_selected_member_container .para').innerHTML = member.description;
+    document.querySelector(`.about_team_img.about_team_img_bounce`).classList.remove('about_team_img_bounce');
+    document.querySelector(`.about_team_img.about_team_img_${memberIndex + 1}`).classList.add('about_team_img_bounce');
+    document.querySelector(`.about_selected_member_social`).innerHTML = '';
+    let linkImg = document.createElement('img');
+    linkImg.setAttribute('src', `./assets/social-icons/${member.socialLinks[0].src}`);
+    let newlink = document.createElement('a');
+    newlink.setAttribute('class', 'about_social_icon');
+    newlink.setAttribute('target', '_blank');
+    newlink.setAttribute('href', member.socialLinks[0].href);
+    newlink.append(linkImg);
+    document.querySelector(`.about_selected_member_social`).appendChild(newlink);
+    // document.querySelector('.about_selected_member_container .about_selected_member_social').innerHTML = (
+    //     <div class="flex_row about_selected_member_social">
+    //         <a herf="#" target="_blank" class="about_social_icon">
+    //             <img src="./assets/social-icons/facebook.svg" />
+    //         </a>
+    //         <a herf="#" target="_blank" class="about_social_icon">
+    //             <img src="./assets/social-icons/pinterest.svg" />
+    //         </a>
+    //         <a herf="#" target="_blank" class="about_social_icon">
+    //             <img src="./assets/social-icons/linkedin.svg" />
+    //         </a>
+    //     </div>
+    // );
+}
+
+window.onload = () => {
+    let sections = document.querySelectorAll("section");
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                console.log(entry.target.id)
+            } else {
+                // console.log('out of view');
+            }
+        });
+    })
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+};
