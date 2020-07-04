@@ -114,13 +114,12 @@ window.onload = () => {
         duration = target.dataset.animateNumberDuration * 1 || 2000,
         current = start,
         range = end - start,
-        increment = end > start ? 1 : -1,
-        step = Math.abs(Math.floor(duration / range)),
+        increment = range / duration * 10,
         timer = setInterval(() => {
             current += increment;
-            target.textContent = current;
-            if (current == end) clearInterval(timer);
-        }, step);
+            target.textContent = Math.floor(current);
+            if (current >= end) clearInterval(timer);
+        }, 10);
     }
 
     var intersectionThreshold;
