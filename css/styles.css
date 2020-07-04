@@ -310,6 +310,7 @@ html, body {
     margin-bottom: 5px;
     margin-top: 15px;
     display: block;
+    font-size: 16px;
 }
 
 .form_control {
@@ -318,6 +319,7 @@ html, body {
     width: 100%;
     padding: 5px 10px;
     font-family: Poppins,sans-serif;
+    outline: none;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
@@ -443,7 +445,7 @@ html, body {
 .rocket_container {
     position: absolute;
     right: 3%;
-    bottom: -120px;
+    bottom: -50%;
     width: 530px;
     height: 500px;
 }
@@ -467,6 +469,10 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
+}
+
+.tech_details {
+    margin-top: 20px;
 }
 
 .tech_card_left {
@@ -556,8 +562,10 @@ html, body {
     height: 56px;
     border-radius: 4px;
     background: var(--light-background);;
-    padding: 15px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech_detail_label {
@@ -776,11 +784,11 @@ html, body {
 }
 
 .about_team_img:hover {
-    -webkit-box-shadow: var(--shadow-2);
-            box-shadow: var(--shadow-2);
-    -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-box-shadow: var(--shadow-5);
+            box-shadow: var(--shadow-5);
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
 }
 
 .about_team_img_1 {
@@ -817,6 +825,9 @@ html, body {
     width: 48px;
     top: 0%;
     left: 34%;
+}
+
+.about_team_img_bounce {
     -webkit-box-shadow: var(--shadow-3);
             box-shadow: var(--shadow-3);
     -webkit-animation: memberFloat 1.5s ease-in-out infinite;
