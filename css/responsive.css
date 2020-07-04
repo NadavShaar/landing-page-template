@@ -224,6 +224,11 @@
         width: 70px;
     }
 
+    .tech_card {
+        min-height: 380px;
+        max-height: 380px;
+    }
+
     .section_title {
         font-size: 40px;
         line-height: 42px;
@@ -421,6 +426,11 @@
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
+    }
+
+    .tech_card {
+        min-height: 200px;
+        max-height: 200px;
     }
 
     .intro_section {
@@ -845,6 +855,11 @@
     .tech_detail_icon > svg {
         width: 16px;
         height: 16px;
+    }
+
+    .tech_card {
+        min-height: 210px;
+        max-height: 210px;
     }
 
     .about_shape {

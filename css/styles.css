@@ -55,6 +55,14 @@ html, body {
     -webkit-animation: rocket 3s ease-in-out infinite;
             animation: rocket 3s ease-in-out infinite;
     width: 50%;
+    opacity: 1;
+    transition: all .75s ease-out;
+}
+
+.rocket_image.start_pos {
+    transform: translate(50%, 0px) rotate(8deg);
+    opacity: 0;
+    bottom: 0;
 }
 
 .rocket_background {
@@ -452,6 +460,11 @@ html, body {
 
 /* === tech === */
 
+.tech_card {
+    min-height: 500px;
+    max-height: 500px;
+}
+
 .tech_inner {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -469,6 +482,14 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.tech_decor_dots.start_pos {
+    left: -450px;
+    top: 50px;
+    opacity: 0;
 }
 
 .tech_details {
@@ -544,7 +565,18 @@ html, body {
 
 .tech_globe_img {
     width: 100px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transform: rotate(0deg);
+    transition: all 1s ease-out;
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
+
+.tech_globe_img.start_pos {
+    left: 200px;
+    transform: rotate(180deg);
+    opacity: 0;
 }
 
 .tech_detail {
@@ -628,7 +660,15 @@ html, body {
 }
 
 .service_icon {
+    transform: rotate3d(0, 1, 0, 0deg);
     width: 140px;
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.service_icon.start_pos {
+    opacity: 0;
+    transform: rotate3d(0, 1, 0, 360deg);
 }
 
 .service_title {
@@ -709,6 +749,15 @@ html, body {
     height: 470px;
     top: 50px;
     fill: var(--border);
+    transform: rotate(0deg);
+    transform-origin: top left;
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
+.about_shape.start_pos {
+    opacity: 0;
+    transform: rotate(40deg);
 }
 
 .about_selected_member_container {
@@ -772,18 +821,29 @@ html, body {
     position: absolute;
     border-radius: 50%;
     background: #fff;
+    opacity: 1;
     cursor: pointer;
+    font-size: 0;
+}
+
+.about_team_img > img {
+    border-radius: 50%;
     -webkit-box-shadow: var(--shadow-1);
             box-shadow: var(--shadow-1);
-    -webkit-transition: all .25s ease-out;
-    -o-transition: all .25s ease-out;
-    transition: all .25s ease-out;
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
             transform: translateY(0px);
+    transition: all .75s ease-out;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.about_team_img:hover {
+.about_team_img > img.start_pos {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.about_team_img > img:hover {
     -webkit-box-shadow: var(--shadow-5);
             box-shadow: var(--shadow-5);
     -webkit-transform: translateY(-3px);
