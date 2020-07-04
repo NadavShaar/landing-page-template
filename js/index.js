@@ -91,34 +91,59 @@ function displayMember(memberName) {
     newlink.setAttribute('href', member.socialLinks[0].href);
     newlink.append(linkImg);
     document.querySelector(`.about_selected_member_social`).appendChild(newlink);
-    // document.querySelector('.about_selected_member_container .about_selected_member_social').innerHTML = (
-    //     <div class="flex_row about_selected_member_social">
-    //         <a herf="#" target="_blank" class="about_social_icon">
-    //             <img src="./assets/social-icons/facebook.svg" />
-    //         </a>
-    //         <a herf="#" target="_blank" class="about_social_icon">
-    //             <img src="./assets/social-icons/pinterest.svg" />
-    //         </a>
-    //         <a herf="#" target="_blank" class="about_social_icon">
-    //             <img src="./assets/social-icons/linkedin.svg" />
-    //         </a>
-    //     </div>
-    // );
 }
 
 window.onload = () => {
-    let sections = document.querySelectorAll("section");
+
+    let intersections = document.querySelectorAll("[data-intersection-name]");
+    
+    let introSelectors = [".rocket_image"];
+    let techSelectors = [".tech_decor_dots", ".tech_card"];
+    let serviceSelectors = [".service_icon"];
+    let aboutSelectors = [".about_shape"];
+    let aboutMembersSelectors = [".about_team_img > img"];
+    let techGlobeImageSelector = [".tech_globe_img"];
+
+    function animatePosition (target, selectors) {
+        selectors.forEach(elSelector => target.querySelectorAll(elSelector).forEach(s => s.classList.remove("start_pos")));
+    }
+    
+    function animateNumbers(target) {
+        let start = target.dataset.animateNumberFrom * 1 || 0,
+        end = target.dataset.animateNumberTo * 1 || 100,
+        duration = target.dataset.animateNumberDuration * 1 || 2000,
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+            current += increment;
+            target.textContent = current;
+            if (current == end) clearInterval(timer);
+        }, step);
+    }
+
+    var intersectionThreshold;
     let observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
-                console.log(entry.target.id)
-            } else {
-                // console.log('out of view');
+                intersectionThreshold = entry.target.dataset.intersectionThreshold * 1 || 0.3;
+                switch (entry.target.dataset.intersectionName) {
+                    case "home": return animatePosition(entry.target, introSelectors);
+                    case "tech": return animatePosition(entry.target, techSelectors);
+                    case "service": return animatePosition(entry.target, serviceSelectors);
+                    case "about": return animatePosition(entry.target, aboutSelectors);
+                    case "exp_num": return animateNumbers(entry.target);
+                    case "about_img": return animatePosition(entry.target, aboutMembersSelectors);
+                    case "tech_globe_img": return animatePosition(entry.target, techGlobeImageSelector);
+                    default: break;
+                }
             }
         });
-    })
-
-    sections.forEach(section => {
-        observer.observe(section);
+    }, { threshold: intersectionThreshold });
+    
+    intersections.forEach(intersection => {
+        observer.observe(intersection);
     });
+    
 };
