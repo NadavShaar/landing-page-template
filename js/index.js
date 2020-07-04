@@ -109,6 +109,7 @@ window.onload = () => {
     }
     
     function animateNumbers(target) {
+        target.removeAttribute('data-intersection-name');
         let start = target.dataset.animateNumberFrom * 1 || 0,
         end = target.dataset.animateNumberTo * 1 || 100,
         duration = target.dataset.animateNumberDuration * 1 || 2000,
