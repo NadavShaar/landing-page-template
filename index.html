@@ -48,13 +48,13 @@
             </nav>
         </header>
         <main class="main">
-            <section id="home" data-intersection-name="home" data-intersection-threshold="0.3" class="section intro_section background_image">
+            <section id="home" class="section intro_section background_image">
                 <svg class="intro_shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="left: 0; transform: rotate3d(0,1,0,180deg);"><path class="shape-fill shape-fill-contrast" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path></svg>
                 <div class="section_inner intro_inner flex_row">
                     <div class="rocket_container">
                         <div class="rocket_background">
                         </div>
-                        <img class="rocket_image start_pos" src="./assets/4.png">
+                        <img data-intersection-id="rocket_img" data-intersection-threshold="0.3" class="rocket_image start_pos" src="./assets/4.png">
                     </div>
                     <div class="intro_text_block">
                         <h1 class="big_title start_pos">FireApp Dev Service</h1>
@@ -77,10 +77,10 @@
                 <div class="flex_child">
                 </div>
             </section> -->
-            <section id="tech" data-intersection-name="tech" data-intersection-threshold="0.3" class="section tech_section flex_row">
+            <section id="tech" class="section tech_section flex_row">
                 <div class="section_inner tech_inner flex_row flex_column_mobile">
-                    <div class="tech_decor_dots start_pos"></div>
-                    <div class="flex_column">
+                    <div class="flex_column tech_left">
+                        <div data-intersection-id="tech_decor_dots" data-intersection-threshold="0.3" class="tech_decor_dots start_pos"></div>
                         <div class="tech_card start_pos paper flex_row flex_column_mobile">
                             <div class="tech_card_left">
                                 <h3 class="text_block_main_title">Industry leading</h3>
@@ -96,15 +96,15 @@
                                     <img src="./assets/tech/webpack.svg" />
                                 </div>
                             </div>
-                            <div class="tech_card_right flex_row_mobile">
+                            <div data-intersection-id="tech_card_right" data-intersection-threshold="0" class="tech_card_right flex_row_mobile start_pos">
                                 <img src="./assets/tech/javascript.svg" />
                                 <img src="./assets/tech/es6.svg" />
                                 <img src="./assets/tech/node-sass.svg" />
                             </div>
                         </div>
                     </div>
-                    <div data-intersection-name="tech_globe_img" data-intersection-threshold="0.3" class="flex_column tech_right">
-                        <img class="tech_globe_img start_pos" src="./assets/tech-globe.svg" />
+                    <div class="flex_column tech_right">
+                        <img data-intersection-id="tech_globe_img" data-intersection-threshold="0.3" class="tech_globe_img start_pos" src="./assets/tech-globe.svg" />
                         <h3 class="text_block_main_title">A complete solution</h3>
                         <h3 class="text_block_sub_title">To keep you ahead of everyone</h3>
                         <p class="para">
@@ -113,7 +113,7 @@
                         <div class="flex_row tech_details">
                             <div class="flex_column">
                                 <div class="tech_detail">
-                                    <span class="tech_detail_icon">
+                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity stroke-primary" style="stroke: #8ed6fb"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                                     </span>
                                     <div class="flex_column">
@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                                 <div class="tech_detail">
-                                    <span class="tech_detail_icon">
+                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap stroke-primary"  style="stroke: #8ed6fb"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                                     </span>
                                     <div class="flex_column">
@@ -133,7 +133,7 @@
                             </div>
                             <div class="flex_column">
                                 <div class="tech_detail">
-                                    <span class="tech_detail_icon">
+                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud stroke-primary"  style="stroke: #8ed6fb"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
                                     </span>
                                     <div class="flex_column">
@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                                 <div class="tech_detail">
-                                    <span class="tech_detail_icon">
+                                    <span data-intersection-id="tech_detail_icon" data-intersection-threshold="0.3" class="tech_detail_icon start_pos">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon stroke-primary" style="stroke: #8ed6fb"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
                                     </span>
                                     <div class="flex_column">
@@ -155,50 +155,50 @@
                     </div>
                 </div>
             </section>
-            <section id="services" class="section services_section">
+            <section id="services" data-intersection-id="services" data-intersection-threshold="0.7" class="section services_section">
                 <div class="section_inner">
-                    <div class="services_decor_circle"></div>
-                    <div class="services_decor_ring"></div>
+                    <div data-intersection-id="services_decor_circle" data-intersection-threshold="0.7" class="services_decor_circle start_pos"></div>
+                    <div data-intersection-id="services_decor_ring" data-intersection-threshold="0.7" class="services_decor_ring start_pos"></div>
                     <div class="flex_column services_container">
                         <span class="section_title">All you need in one place</span>
                         <div class="flex_row flex_wrap">
-                            <div data-intersection-name="service" data-intersection-threshold="0.7" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/plan.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/plan.svg" />
                                 <span class="service_title">strategy</span>
                                 <p class="para text_center">
                                     We will help you find the best approach for your product. you will save time and money by avoiding unnecessary work.
                                 </p>
                             </div>
-                            <div data-intersection-name="service" data-intersection-threshold="0.7" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/cup.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/cup.svg" />
                                 <span class="service_title">top quality</span>
                                 <p class="para text_center">
                                     Your app is built by proffesionals and is optimized for a slick, high performace, intuitive operation.
                                 </p>
                             </div>
-                            <div data-intersection-name="service" data-intersection-threshold="0.7" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/target.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/target.svg" />
                                 <span class="service_title">accuracy</span>
                                 <p class="para text_center">
                                     Our custom built apps are accuractly according to requirements.
                                 </p>
                             </div>
-                            <div data-intersection-name="service" data-intersection-threshold="0.7" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/clock.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/clock.svg" />
                                 <span class="service_title">on time</span>
                                 <p class="para text_center">
                                     Our rapid development process enables fast delivery without hindering quality or flexibility.
                                 </p>
                             </div>
-                            <div data-intersection-name="service" data-intersection-threshold="0.3" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/growth.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/growth.svg" />
                                 <span class="service_title">scalable</span>
                                 <p class="para text_center">
                                     Your app is ready to scale from day one. as your business grows, so does the infrastucture.
                                 </p>
                             </div>
-                            <div data-intersection-name="service" data-intersection-threshold="0.3" class="service">
-                                <img class="service_icon start_pos" src="assets/icons/test.svg" />
+                            <div class="service">
+                                <img data-intersection-id="service_icon" data-intersection-threshold="0.7" class="service_icon start_pos" src="assets/icons/test.svg" />
                                 <span class="service_title">testing</span>
                                 <p class="para text_center">
                                     Testing makes sure our apps are durable and persistent.
@@ -208,7 +208,7 @@
                     </div>
                 </div>
             </section>
-            <section id="experience" data-intersection-name="experience" data-intersection-threshold="0.5" class="section exp_section background_image">
+            <section id="experience" data-intersection-id="experience" data-intersection-threshold="0.5" class="section exp_section background_image">
                 <svg class="exp_svg_divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
                     <path fill="#f8fafc" fill-opacity="1" d="M0,96L120,106.7C240,117,480,139,720,144C960,149,1200,139,1320,133.3L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
                 </svg>
@@ -223,7 +223,7 @@
                         <div class="flex_column align_center exp_box">
                             <div class="flex_row">
                                 <span 
-                                    data-intersection-name="exp_num" 
+                                    data-intersection-id="exp_num" 
                                     data-intersection-threshold="0.5" 
                                     data-animate-number-from="0" 
                                     data-animate-number-to="30" 
@@ -237,7 +237,7 @@
                         <div class="flex_column align_center exp_box">
                             <div class="flex_row">
                                 <span 
-                                    data-intersection-name="exp_num" 
+                                    data-intersection-id="exp_num" 
                                     data-intersection-threshold="0.5" 
                                     data-animate-number-from="0" 
                                     data-animate-number-to="6112" 
@@ -251,7 +251,7 @@
                         <div class="flex_column align_center exp_box">
                             <div class="flex_row">
                                 <span 
-                                    data-intersection-name="exp_num" 
+                                    data-intersection-id="exp_num" 
                                     data-intersection-threshold="0.5" 
                                     data-animate-number-from="0" 
                                     data-animate-number-to="396" 
@@ -265,7 +265,7 @@
                         <div class="flex_column align_center exp_box">
                             <div class="flex_row">
                                 <span 
-                                    data-intersection-name="exp_num" 
+                                    data-intersection-id="exp_num" 
                                     data-intersection-threshold="0.5" 
                                     data-animate-number-from="0" 
                                     data-animate-number-to="112" 
@@ -282,12 +282,12 @@
                     <path fill="#ffffff" fill-opacity="1" d="M0,256L120,229.3C240,203,480,149,720,138.7C960,128,1200,160,1320,176L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
                 </svg>
             </section>
-            <section id="about" data-intersection-name="about" data-intersection-threshold="0.3" class="section about_section">
+            <section id="about" class="section about_section">
                 <div class="section_inner about_inner flex_row">
                     <div class="flex_column">
                         <div class="flex_row flex_column_mobile">
                             <div class="flex_row about_section_left">
-                                <svg class="shape h-100 about_shape start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
+                                <svg data-intersection-id="about_shape" data-intersection-threshold="0.7" class="shape h-100 about_shape start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
                                     <g id="Capa_2" data-name="Capa 2"><g id="OBJECTS"><path class="cls-1" d="M236.5,78.38a75.26,75.26,0,0,0-7.74-9.67l0,0S182.91,16.47,105.14,2l0,0A83.91,83.91,0,0,0,4.53,69.71C-11.34,147,19.55,209,19.73,209.4a75,75,0,0,0,6,10.77c19.06,28.33,54.33,39.57,86.73,30.43,0,0,52.47-12.9,111.35-71.37h0C251.68,152.56,257.84,110.1,236.5,78.38Z"></path></g></g>
                                 </svg>
                                 <div class="flex_column about_selected_member_container">
@@ -318,24 +318,12 @@
                                 </div>
                                 <div class="about_map_wrapper">
                                     <img class="about_map_img" src="./assets/map.svg" />
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_1">
-                                        <img class="start_pos" src="./assets/team/ido.jpg" title="Ido Ofir" onclick="displayMember('Ido Ofir')" />
-                                    </span>
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_2">
-                                        <img class="start_pos" src="./assets/team/nadav.jpg" title="Nadav Shaar" onclick="displayMember('Nadav Shaar')" />
-                                    </span>
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_3">
-                                        <img class="start_pos" src="./assets/team/ilay.jpg" title="Ilay Ofir" onclick="displayMember('Ilay Ofir')" />
-                                    </span>
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_4">
-                                        <img class="start_pos" src="./assets/team/yoav.jpg" title="Yoav Leshem" onclick="displayMember('Yoav Leshem')" />
-                                    </span>
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_5">
-                                        <img class="start_pos" src="./assets/team/ziv.jpg" title="Ziv Zerr" onclick="displayMember('Ziv Zerr')" />
-                                    </span>
-                                    <span data-intersection-name="about_img" data-intersection-threshold="0.5" class="about_team_img about_team_img_6 about_team_img_bounce">
-                                        <img class="start_pos" src="./assets/team/yakov.jpg" title="Yakov Rakhamimov" onclick="displayMember('Yakov Rakhamimov')" />
-                                    </span>
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_1 start_pos" src="./assets/team/ido.jpg" title="Ido Ofir" onclick="displayMember('Ido Ofir')" />
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_2 start_pos" src="./assets/team/nadav.jpg" title="Nadav Shaar" onclick="displayMember('Nadav Shaar')" />
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_3 start_pos" src="./assets/team/ilay.jpg" title="Ilay Ofir" onclick="displayMember('Ilay Ofir')" />
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_4 start_pos" src="./assets/team/yoav.jpg" title="Yoav Leshem" onclick="displayMember('Yoav Leshem')" />
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_5 start_pos" src="./assets/team/ziv.jpg" title="Ziv Zerr" onclick="displayMember('Ziv Zerr')" />
+                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_6 about_team_img_bounce start_pos" src="./assets/team/yakov.jpg" title="Yakov Rakhamimov" onclick="displayMember('Yakov Rakhamimov')" />
                                 </div>
                             </div>
                         </div>
@@ -355,18 +343,15 @@
                                     <!-- <form class="form" action="mailto:nadavshaar@gmail.com" method="post" enctype="text/plain" > -->
                                         <div class="form-group">
                                             <label for="name" class="form_control_label">Name</label> 
-                                            <input type="text" class="form_control" id="name">
+                                            <!-- <input type="text" class="form_control" id="name"> -->
                                         </div>
                                         <div class="form-group">
                                             <label for="email" class="form_control_label">Email</label> 
-                                            <input type="email" class="form_control" id="email">
+                                            <!-- <input type="email" class="form_control" id="email"> -->
                                         </div>
                                         <div class="form-group">
                                             <label for="company" class="form_control_label">Company</label> 
-                                            <input type="text" class="form_control" id="company">
-                                        </div>
-                                        <div class="form-group mt-5">
-                                            <button class="button" type="submit">send</button>
+                                            <!-- <input type="text" class="form_control" id="company"> -->
                                         </div>
                                         <a class="form-group mt-5" href="mailto:nadavshaar@gmail.com?subject=a&body=b">
                                             <button class="button">email us!!</button>

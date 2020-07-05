@@ -95,21 +95,12 @@ function displayMember(memberName) {
 
 window.onload = () => {
 
-    let intersections = document.querySelectorAll("[data-intersection-name]");
-    
-    let introSelectors = [".rocket_image"];
-    let techSelectors = [".tech_decor_dots", ".tech_card"];
-    let serviceSelectors = [".service_icon"];
-    let aboutSelectors = [".about_shape"];
-    let aboutMembersSelectors = [".about_team_img > img"];
-    let techGlobeImageSelector = [".tech_globe_img"];
+    let intersections = document.querySelectorAll("[data-intersection-id]");
 
-    function animatePosition (target, selectors) {
-        selectors.forEach(elSelector => target.querySelectorAll(elSelector).forEach(s => s.classList.remove("start_pos")));
-    }
+    function animatePosition (target) { return target.classList.remove("start_pos") };
     
     function animateNumbers(target) {
-        target.removeAttribute('data-intersection-name');
+        target.removeAttribute('data-intersection-id');
         let start = target.dataset.animateNumberFrom * 1 || 0,
         end = target.dataset.animateNumberTo * 1 || 100,
         duration = target.dataset.animateNumberDuration * 1 || 2000,
@@ -127,17 +118,15 @@ window.onload = () => {
     let observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
+
                 intersectionThreshold = entry.target.dataset.intersectionThreshold * 1 || 0.3;
-                switch (entry.target.dataset.intersectionName) {
-                    case "home": return animatePosition(entry.target, introSelectors);
-                    case "tech": return animatePosition(entry.target, techSelectors);
-                    case "service": return animatePosition(entry.target, serviceSelectors);
-                    case "about": return animatePosition(entry.target, aboutSelectors);
+
+                switch (entry.target.dataset.intersectionId) {
                     case "exp_num": return animateNumbers(entry.target);
-                    case "about_img": return animatePosition(entry.target, aboutMembersSelectors);
-                    case "tech_globe_img": return animatePosition(entry.target, techGlobeImageSelector);
-                    default: break;
+                    case "tech_globe_img": console.log(entry.target);
+                    default: return animatePosition(entry.target);
                 }
+
             }
         });
     }, { threshold: intersectionThreshold });

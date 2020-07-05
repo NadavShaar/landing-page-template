@@ -460,6 +460,10 @@ html, body {
 
 /* === tech === */
 
+.tech_left {
+    margin-right: 20px;
+}
+
 .tech_card {
     min-height: 500px;
     max-height: 500px;
@@ -482,7 +486,7 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
-    transition: all 1s ease-out;
+    transition: all 1s ease-out .2s;
     opacity: 1;
 }
 
@@ -544,6 +548,15 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 20px;
+    bottom: 0;
+    transition: all 1s ease-out .1s;
+    opacity: 1;
+    position: relative;
+}
+
+.tech_card_right.start_pos {
+    bottom: -40%;
+    opacity: 0;
 }
 
 .tech_card_right img {
@@ -598,6 +611,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotate3d(1, 0, 0, 0deg);
+    transition: all 1s ease-out .2s;
+}
+
+.tech_detail_icon.start_pos {
+    transform: rotate3d(1, 0, 0, 360deg);
 }
 
 .tech_detail_label {
@@ -640,9 +659,14 @@ html, body {
     height: 300px;
     background: var(--light-gray);
     border-radius: 50%;
+    transition: all 1s ease-out .2s;
     -webkit-transform: translate(-30%, 10%);
         -ms-transform: translate(-30%, 10%);
             transform: translate(-30%, 10%);
+}
+
+.services_decor_circle.start_pos {
+    transform: translate(-90%, -10%);
 }
 
 .services_decor_ring {
@@ -657,6 +681,11 @@ html, body {
         -ms-transform: translate(40%, -60%);
             transform: translate(40%, -60%);
     border: 10px solid var(--light-gray);
+    transition: all 1s ease-out .2s;
+}
+
+.services_decor_ring.start_pos {
+    transform: translate(80%, -10%);
 }
 
 .service_icon {
@@ -680,6 +709,7 @@ html, body {
 }
 
 .services_section {
+    overflow: hidden;
     background: var(--light-background);
     border-top: 1px solid var(--border);
 }
@@ -819,14 +849,9 @@ html, body {
 
 .about_team_img {
     position: absolute;
-    border-radius: 50%;
     background: #fff;
-    opacity: 1;
     cursor: pointer;
     font-size: 0;
-}
-
-.about_team_img > img {
     border-radius: 50%;
     -webkit-box-shadow: var(--shadow-1);
             box-shadow: var(--shadow-1);
@@ -838,12 +863,12 @@ html, body {
     transform: translateY(0);
 }
 
-.about_team_img > img.start_pos {
+.about_team_img.start_pos {
     opacity: 0;
     transform: translateY(20px);
 }
 
-.about_team_img > img:hover {
+.about_team_img:hover {
     -webkit-box-shadow: var(--shadow-5);
             box-shadow: var(--shadow-5);
     -webkit-transform: translateY(-3px);

@@ -192,6 +192,10 @@
         font-size: 20px;
     }
 
+    .tech_left {
+        margin-right: 0px;
+    }
+
     .tech_inner {
         margin-top: 60px;
         margin-bottom: 20px;
@@ -426,6 +430,12 @@
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
+        left: 0;
+    }
+
+    .tech_card_right.start_pos {
+        bottom: unset;
+        left: -40%;
     }
 
     .tech_card {
@@ -530,6 +540,11 @@
         top: 25px;
         width: 40px;
         left: 290px;
+    }
+
+    .tech_globe_img.start_pos {
+        left: 300px;
+        top: 15px;
     }
 
     .service {
@@ -858,8 +873,8 @@
     }
 
     .tech_card {
-        min-height: 210px;
-        max-height: 210px;
+        min-height: 225px;
+        max-height: 225px;
     }
 
     .about_shape {
@@ -930,6 +945,10 @@
     .tech_globe_img {
         width: 30px;
         left: 260px;
+    }
+
+    .tech_globe_img.start_pos {
+        left: 280px;
     }
 
     .big_title {
