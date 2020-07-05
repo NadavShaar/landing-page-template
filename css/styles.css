@@ -466,7 +466,6 @@ html, body {
 
 .tech_card {
     min-height: 500px;
-    max-height: 500px;
 }
 
 .tech_inner {
@@ -552,6 +551,7 @@ html, body {
     transition: all 1s ease-out .1s;
     opacity: 1;
     position: relative;
+    max-height: fit-content;
 }
 
 .tech_card_right.start_pos {

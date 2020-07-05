@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* =============== media queries =============== */
 
 @media only screen and (max-width: 1201px) {
@@ -230,7 +237,6 @@
 
     .tech_card {
         min-height: 380px;
-        max-height: 380px;
     }
 
     .section_title {
@@ -440,7 +446,6 @@
 
     .tech_card {
         min-height: 200px;
-        max-height: 200px;
     }
 
     .intro_section {
@@ -874,7 +879,6 @@
 
     .tech_card {
         min-height: 225px;
-        max-height: 225px;
     }
 
     .about_shape {
