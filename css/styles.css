@@ -313,34 +313,24 @@ html, body {
     text-align: center;
 }
 
-.form_control_label {
+.contact_label {
     color: var(--light-text);
-    margin-bottom: 5px;
-    margin-top: 15px;
     display: block;
     font-size: 16px;
 }
 
-.form_control {
-    color: var(--gray-text);
+.contact_value {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
     display: block;
-    width: 100%;
-    padding: 5px 10px;
-    font-family: Poppins,sans-serif;
-    outline: none;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    background-color: var(--white);
-    background-clip: padding-box;
-    border: 1px solid var(--border);
-    border-radius: .25rem;
-    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-    -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    font-size: 18px;
 }
+
+.contact_value:last-of-type {
+    margin-bottom: 0px;
+}
+
+
 
 /* =============== sections =============== */
 
@@ -858,7 +848,7 @@ html, body {
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
             transform: translateY(0px);
-    transition: all .75s ease-out;
+    transition: all .2s ease-out;
     opacity: 1;
     transform: translateY(0);
 }

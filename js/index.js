@@ -123,7 +123,6 @@ window.onload = () => {
 
                 switch (entry.target.dataset.intersectionId) {
                     case "exp_num": return animateNumbers(entry.target);
-                    case "tech_globe_img": console.log(entry.target);
                     default: return animatePosition(entry.target);
                 }
 

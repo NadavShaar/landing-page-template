@@ -723,6 +723,14 @@
     .about_info {
         padding: 20px 0px;
     }
+
+    .contact_label {
+        font-size: 14px;
+    }
+    
+    .contact_value {
+        font-size: 16px;
+    }
     
 }
 
