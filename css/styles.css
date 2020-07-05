@@ -477,7 +477,7 @@ html, body {
 .tech_decor_dots {
     position: absolute;
     top: -10px;
-    left: -120px;
+    left: -10%;
     width: 60%;
     height: 155px;
     -webkit-transform: rotate(-10deg);
@@ -491,7 +491,7 @@ html, body {
 }
 
 .tech_decor_dots.start_pos {
-    left: -450px;
+    left: -40%;
     top: 50px;
     opacity: 0;
 }
