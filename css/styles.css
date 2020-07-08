@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* =============== reset =============== */
 
 * {
@@ -56,11 +63,15 @@ html, body {
             animation: rocket 3s ease-in-out infinite;
     width: 50%;
     opacity: 1;
+    -webkit-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
     transition: all .75s ease-out;
 }
 
 .rocket_image.start_pos {
-    transform: translate(50%, 0px) rotate(8deg);
+    -webkit-transform: translate(50%, 0px) rotate(8deg);
+        -ms-transform: translate(50%, 0px) rotate(8deg);
+            transform: translate(50%, 0px) rotate(8deg);
     opacity: 0;
     bottom: 0;
 }
@@ -326,10 +337,13 @@ html, body {
     font-size: 18px;
 }
 
-.contact_value:last-of-type {
-    margin-bottom: 0px;
+a.contact_value {
+    text-decoration: underline;
 }
 
+.contact_value:last-child {
+    margin: 0;
+}
 
 
 /* =============== sections =============== */
@@ -475,6 +489,8 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
+    -webkit-transition: all 1s ease-out .2s;
+    -o-transition: all 1s ease-out .2s;
     transition: all 1s ease-out .2s;
     opacity: 1;
 }
@@ -538,9 +554,13 @@ html, body {
             align-items: center;
     padding: 0 20px;
     bottom: 0;
+    -webkit-transition: all 1s ease-out .1s;
+    -o-transition: all 1s ease-out .1s;
     transition: all 1s ease-out .1s;
     opacity: 1;
     position: relative;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
     max-height: fit-content;
 }
 
@@ -569,7 +589,11 @@ html, body {
 .tech_globe_img {
     width: 100px;
     margin-bottom: 20px;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     position: relative;
     left: 0;
@@ -578,7 +602,9 @@ html, body {
 
 .tech_globe_img.start_pos {
     left: 200px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     opacity: 0;
 }
 
@@ -598,15 +624,25 @@ html, body {
     border-radius: 4px;
     background: var(--light-background);;
     margin-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate3d(1, 0, 0, 0deg);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    -webkit-transition: all 1s ease-out .2s;
+    -o-transition: all 1s ease-out .2s;
     transition: all 1s ease-out .2s;
 }
 
 .tech_detail_icon.start_pos {
-    transform: rotate3d(1, 0, 0, 360deg);
+    -webkit-transform: rotate3d(1, 0, 0, 360deg);
+            transform: rotate3d(1, 0, 0, 360deg);
 }
 
 .tech_detail_label {
@@ -649,6 +685,8 @@ html, body {
     height: 300px;
     background: var(--light-gray);
     border-radius: 50%;
+    -webkit-transition: all 1s ease-out .2s;
+    -o-transition: all 1s ease-out .2s;
     transition: all 1s ease-out .2s;
     -webkit-transform: translate(-30%, 10%);
         -ms-transform: translate(-30%, 10%);
@@ -656,7 +694,9 @@ html, body {
 }
 
 .services_decor_circle.start_pos {
-    transform: translate(-90%, -10%);
+    -webkit-transform: translate(-90%, -10%);
+        -ms-transform: translate(-90%, -10%);
+            transform: translate(-90%, -10%);
 }
 
 .services_decor_ring {
@@ -671,23 +711,31 @@ html, body {
         -ms-transform: translate(40%, -60%);
             transform: translate(40%, -60%);
     border: 10px solid var(--light-gray);
+    -webkit-transition: all 1s ease-out .2s;
+    -o-transition: all 1s ease-out .2s;
     transition: all 1s ease-out .2s;
 }
 
 .services_decor_ring.start_pos {
-    transform: translate(80%, -10%);
+    -webkit-transform: translate(80%, -10%);
+        -ms-transform: translate(80%, -10%);
+            transform: translate(80%, -10%);
 }
 
 .service_icon {
-    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
     width: 140px;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     opacity: 1;
 }
 
 .service_icon.start_pos {
     opacity: 0;
-    transform: rotate3d(0, 1, 0, 360deg);
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
 }
 
 .service_title {
@@ -769,15 +817,23 @@ html, body {
     height: 470px;
     top: 50px;
     fill: var(--border);
-    transform: rotate(0deg);
-    transform-origin: top left;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     opacity: 1;
 }
 
 .about_shape.start_pos {
     opacity: 0;
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
 }
 
 .about_selected_member_container {
@@ -848,14 +904,20 @@ html, body {
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
             transform: translateY(0px);
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
 }
 
 .about_team_img.start_pos {
     opacity: 0;
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
 }
 
 .about_team_img:hover {
@@ -934,6 +996,17 @@ html, body {
     bottom: 0;
     right: 0;
     border-radius: 50%;
+    -webkit-transition: -webkit-transform .75s ease-out;
+    transition: -webkit-transform .75s ease-out;
+    -o-transition: transform .75s ease-out;
+    transition: transform .75s ease-out;
+    transition: transform .75s ease-out, -webkit-transform .75s ease-out;
+}
+
+.sun_shape.start_pos {
+    -webkit-transform: translate(-60%, 0%);
+        -ms-transform: translate(-60%, 0%);
+            transform: translate(-60%, 0%);
 }
 
 .contact_decor_dots {
@@ -945,10 +1018,19 @@ html, body {
     background-color: transparent;
     background-image: var(--dots-gradient);
     background-size: 20px 20px;
+    opacity: 1;
+    -webkit-transition: all .75s ease-out .2s;
+    -o-transition: all .75s ease-out .2s;
+    transition: all .75s ease-out .2s;
+}
+
+.contact_decor_dots.start_pos {
+    opacity: 0;
+    top: 0;
 }
 
 .contact_form_container {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .contact_right {
@@ -969,6 +1051,17 @@ html, body {
     margin-bottom: 20px;
 }
 
+.contact_left .paper {
+    bottom: 0;
+    -webkit-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    transition: all .75s ease-out; 
+}
+
+.contact_left .paper.start_pos {
+    bottom: -50px;
+}
+
 .clouds_container {
     position: relative;
     min-height: 250px;
@@ -981,6 +1074,14 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
+}
+
+.cloud_1.start_pos {
+    opacity: 0;
 }
 
 .cloud_2 {
@@ -990,8 +1091,16 @@ html, body {
     position: absolute;
     top: 50px;
     left: 38%;
+    opacity: 1;
     -webkit-animation: cloudFloat 1.25s ease-in-out infinite;
             animation: cloudFloat 1.25s ease-in-out infinite;
+    -webkit-transition: opacity .4s ease-out .2s;
+    -o-transition: opacity .4s ease-out .2s;
+    transition: opacity .4s ease-out .2s;
+}
+
+.cloud_2.start_pos {
+    opacity: 0;
 }
 
 .cloud_3 {
@@ -1001,6 +1110,14 @@ html, body {
     position: absolute;
     top: -45px;
     left: 65%;
+    opacity: 1;
+    -webkit-transition: opacity .4s ease-out .4s;
+    -o-transition: opacity .4s ease-out .4s;
+    transition: opacity .4s ease-out .4s;
+}
+
+.cloud_3.start_pos {
+    opacity: 0;
 }
 
 /* === footer === */

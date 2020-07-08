@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* =============== media queries =============== */
 
 @media only screen and (max-width: 1201px) {
@@ -976,7 +983,7 @@
     }
 
     .logo_label {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .logo {
