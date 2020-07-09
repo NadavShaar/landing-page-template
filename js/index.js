@@ -74,40 +74,40 @@ var team = [
 ]
 
 function displayMember(memberName) {
-    let memberIndex = team.findIndex(m => m.name === memberName);
-    let member = team[memberIndex];
+    var memberIndex = team.findIndex(function(m) {return m.name === memberName});
+    var member = team[memberIndex];
     document.querySelector('.about_selected_member_container .about_selected_member_avatar').src = "./assets/team/" + member.img;
     document.querySelector('.about_selected_member_container .text_block_main_title').innerHTML = member.name;
     document.querySelector('.about_selected_member_container .text_block_sub_title').innerHTML = member.role;
     document.querySelector('.about_selected_member_container .para').innerHTML = member.description;
-    document.querySelector(`.about_team_img.about_team_img_bounce`).classList.remove('about_team_img_bounce');
-    document.querySelector(`.about_team_img.about_team_img_${memberIndex + 1}`).classList.add('about_team_img_bounce');
-    document.querySelector(`.about_selected_member_social`).innerHTML = '';
-    let linkImg = document.createElement('img');
-    linkImg.setAttribute('src', `./assets/social-icons/${member.socialLinks[0].src}`);
-    let newlink = document.createElement('a');
+    document.querySelector('.about_team_img.about_team_img_bounce').classList.remove('about_team_img_bounce');
+    document.querySelector('.about_team_img.about_team_img_' + (memberIndex + 1)).classList.add('about_team_img_bounce');
+    document.querySelector('.about_selected_member_social').innerHTML = '';
+    var linkImg = document.createElement('img');
+    linkImg.setAttribute('src', './assets/social-icons/' + member.socialLinks[0].src);
+    var newlink = document.createElement('a');
     newlink.setAttribute('class', 'about_social_icon');
     newlink.setAttribute('target', '_blank');
     newlink.setAttribute('href', member.socialLinks[0].href);
     newlink.append(linkImg);
-    document.querySelector(`.about_selected_member_social`).appendChild(newlink);
+    document.querySelector('.about_selected_member_social').appendChild(newlink);
 }
 
-window.onload = () => {
+window.onload = function() {
 
-    let intersections = document.querySelectorAll("[data-intersection-id]");
+    var intersections = document.querySelectorAll("[data-intersection-id]");
 
     function animatePosition (target) { return target.classList.remove("start_pos") };
     
     function animateNumbers(target) {
         target.removeAttribute('data-intersection-id');
-        let start = target.dataset.animateNumberFrom * 1 || 0,
+        var start = target.dataset.animateNumberFrom * 1 || 0,
         end = target.dataset.animateNumberTo * 1 || 100,
         duration = target.dataset.animateNumberDuration * 1 || 2000,
         current = start,
         range = end - start,
         increment = range / duration * 10,
-        timer = setInterval(() => {
+        timer = setInterval(function() {
             current += increment;
             target.textContent = Math.floor(current);
             if (current >= end) clearInterval(timer);
@@ -115,8 +115,8 @@ window.onload = () => {
     }
 
     var intersectionThreshold;
-    let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
             if (entry.intersectionRatio > 0) {
 
                 intersectionThreshold = entry.target.dataset.intersectionThreshold * 1 || 0.3;
@@ -129,9 +129,10 @@ window.onload = () => {
             }
         });
     }, { threshold: intersectionThreshold });
-    
-    intersections.forEach(intersection => {
-        observer.observe(intersection);
-    });
+
+    for(var key in intersections) {
+        if(key === "length") return;
+        observer.observe(intersections[key]);
+    }
     
 };
