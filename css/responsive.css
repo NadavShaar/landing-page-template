@@ -482,15 +482,15 @@
             -ms-flex-direction: column;
                 flex-direction: column;
         text-align: center;
-        background: var(--white);
+        background: #fff;
         overflow: hidden;
         height: 0;
         -webkit-transition: .2s ease-out;
         -o-transition: .2s ease-out;
         transition: .2s ease-out;
         height: 0px;
-        -webkit-box-shadow: var(--shadow-1);
-                box-shadow: var(--shadow-1);
+        -webkit-box-shadow: 0px 2px 2px 0 #00000040;
+                box-shadow: 0px 2px 2px 0 #00000040;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -505,14 +505,14 @@
     }
 
     .nav_item a {
-        color: var(--red);
+        color: #dd4d2e;
         text-shadow: none; 
         display: block;
         padding: 10px 0;       
     }
 
     .nav_item a:hover {
-        background: var(--light-gray);       
+        background: #e8ecf396;       
     }
 
     .menu {
@@ -626,8 +626,8 @@
     }
 
     .paper {
-        -webkit-box-shadow: var(--shadow-1);
-                box-shadow: var(--shadow-1);
+        -webkit-box-shadow: 0px 2px 2px 0 #00000040;
+                box-shadow: 0px 2px 2px 0 #00000040;
     }
 
     .cloud_1 {
@@ -828,15 +828,15 @@
     }
 
     .contact_section {
-        background: var(--light-background);
-        border-top: 1px solid var(--border);
+        background: #f8fafc;
+        border-top: 1px solid #e8ecf3;
         margin: 30px 0 0px;
         padding: 30px 0px;
     }
 
     .contact_left .paper {
-        -webkit-box-shadow: var(--shadow-3);
-                box-shadow: var(--shadow-3);
+        -webkit-box-shadow: 0 0.5rem 1rem #00000040;
+                box-shadow: 0 0.5rem 1rem #00000040;
     }
 
     .nav {
