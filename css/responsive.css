@@ -1,20 +1,6 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* =============== media queries =============== */
 
-@media only screen and (max-width: 1201px) {
+@media only screen and (max-width: 1200px) {
     .button {
         height: 36px;
         font-size: 10px;
@@ -64,10 +50,6 @@
         font-size: 20px;
     }
 
-    .exp_inner {
-        bottom: -50px;
-    }
-
     .exp_info {
         padding-bottom: 50px;
     }
@@ -81,13 +63,14 @@
         font-size: 20px;
     }
 
-    .about_shape {
+    .about_shape > svg {
         height: 400px;
+        width: 400px;
     }
 
     .about_selected_member_container {
         top: 60px;
-        left: 19%;
+        padding-left: calc(19% + 20px);
     }
 
     .about_selected_member_avatar {
@@ -96,19 +79,19 @@
         margin-bottom: 10px;
     }
 
-    .cloud_1 {
+    .cloud_1 > svg {
         -webkit-transform: scale(.7);
             -ms-transform: scale(.7);
                 transform: scale(.7);
     }
     
-    .cloud_2 {
+    .cloud_2 > svg {
         -webkit-transform: scale(1.6);
             -ms-transform: scale(1.6);
                 transform: scale(1.6);
     }
     
-    .cloud_3 {
+    .cloud_3 > svg {
         -webkit-transform: scale(.6);
             -ms-transform: scale(.6);
                 transform: scale(.6);
@@ -145,7 +128,7 @@
     }
 }
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 992px) {
     .button {
         height: 34px;
         font-size: 10px;
@@ -251,10 +234,6 @@
         line-height: 42px;
     }
 
-    .exp_inner {
-        bottom: -40px;
-    }
-
     .exp_info {
         padding-bottom: 40px;
     }
@@ -268,13 +247,14 @@
         font-size: 18px;
     }
 
-    .about_shape {
+    .about_shape > svg {
         height: 350px;
+        width: 350px;
         left: 0px;
     }
 
     .about_selected_member_container {
-        left: 9%;
+        padding-left: calc(9% + 20px);
     }
 
     .about_selected_member_avatar {
@@ -314,21 +294,21 @@
         padding-right: 40px;
     }
 
-    .cloud_1 {
+    .cloud_1 > svg {
         -webkit-transform: scale(.65);
             -ms-transform: scale(.65);
                 transform: scale(.65);
         left: -5%;
     }
     
-    .cloud_2 {
+    .cloud_2 > svg {
         -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
                 transform: scale(1.2);
         left: 23%;
     }
     
-    .cloud_3 {
+    .cloud_3 > svg {
         -webkit-transform: scale(.5);
             -ms-transform: scale(.5);
                 transform: scale(.5);
@@ -378,7 +358,7 @@
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
 
     .rocket_container {
         bottom: -30%;
@@ -428,6 +408,9 @@
     }
 
     .tech_card_left {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
         padding-right: 0px;
         padding-left: 0px;
         margin-right: 20px;
@@ -444,15 +427,21 @@
             -ms-flex-pack: start;
                 justify-content: flex-start;
         left: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
     }
 
     .tech_card_right.start_pos {
-        bottom: unset;
+        bottom: 0;
         left: -40%;
     }
 
     .tech_card {
         min-height: 200px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
     }
 
     .intro_section {
@@ -489,8 +478,8 @@
         -o-transition: .2s ease-out;
         transition: .2s ease-out;
         height: 0px;
-        -webkit-box-shadow: 0px 2px 2px 0 #00000040;
-                box-shadow: 0px 2px 2px 0 #00000040;
+        -webkit-box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);
+                box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -545,6 +534,7 @@
     .tech_right {
         margin-top: 10px;
         padding: 20px 0px;
+        display: block;
     }
 
     .tech_globe_img {
@@ -567,6 +557,7 @@
     .tech_inner {
         margin-top: 40px;
         margin-bottom: 0px;
+        display: block;
     }
 
     .text_block_main_title {
@@ -590,10 +581,6 @@
 
     .section_title {
         margin-bottom: 0px;
-    }
-
-    .exp_inner {
-        bottom: -30px;
     }
 
     .exp_info {
@@ -625,26 +612,30 @@
         margin-top: -10%;
     }
 
-    .paper {
-        -webkit-box-shadow: 0px 2px 2px 0 #00000040;
-                box-shadow: 0px 2px 2px 0 #00000040;
+    .about_inner > div {
+        display: block;
     }
 
-    .cloud_1 {
+    .paper {
+        -webkit-box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);
+                box-shadow: 0px 2px 2px 0 rgba(0,0,0,.25);
+    }
+
+    .cloud_1 > svg {
         -webkit-transform: scale(.5);
             -ms-transform: scale(.5);
                 transform: scale(.5);
         left: -12%;
     }
     
-    .cloud_2 {
+    .cloud_2 > svg {
         -webkit-transform: scale(1);
             -ms-transform: scale(1);
                 transform: scale(1);
         left: 30%;
     }
     
-    .cloud_3 {
+    .cloud_3 > svg {
         -webkit-transform: scale(.4);
             -ms-transform: scale(.4);
                 transform: scale(.4);
@@ -681,6 +672,18 @@
         }
     }
 
+    .contact_left {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+    }
+
+    .contact_right_inner {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+    }
+
     .sun_shape {
         bottom: unset;
         top: -6%;
@@ -700,20 +703,20 @@
         min-height: 200px;
     }
 
-    .cloud_1 {
+    .cloud_1 > svg {
         -webkit-transform: scale(.85);
             -ms-transform: scale(.85);
                 transform: scale(.85);
         left: 0;
     }
 
-    .cloud_2 {
+    .cloud_2 > svg {
         -webkit-transform: scale(1);
             -ms-transform: scale(1);
                 transform: scale(1);
     }
 
-    .cloud_3 {
+    .cloud_3 > svg {
         -webkit-transform: scale(.7);
             -ms-transform: scale(.7);
                 transform: scale(.7);
@@ -741,7 +744,7 @@
     
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 600px) {
     .rocket_container {
         width: 120px;
         height: 120px;
@@ -799,6 +802,11 @@
         width: 80%;
     }
 
+    .exp_inner {
+        padding-top: 23%;
+        padding-bottom: 20%;
+    }
+
     .exp_box {
         min-width: 50%;
         max-width: 50%;
@@ -835,8 +843,8 @@
     }
 
     .contact_left .paper {
-        -webkit-box-shadow: 0 0.5rem 1rem #00000040;
-                box-shadow: 0 0.5rem 1rem #00000040;
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0,0,0,.25);
+                box-shadow: 0 0.5rem 1rem rgba(0,0,0,.25);
     }
 
     .nav {
@@ -845,7 +853,7 @@
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 480px) {
     .rocket_container {
         width: 90px;
         height: 90px;
@@ -892,12 +900,9 @@
         height: 16px;
     }
 
-    .tech_card {
-        min-height: 225px;
-    }
-
-    .about_shape {
+    .about_shape > svg {
         height: 280px;
+        width: 280px;
     }
 
     .about_selected_member_container {
@@ -943,7 +948,7 @@
         width: 35px;
     }
 
-    .cloud_2 {
+    .cloud_2 > svg {
         left: 40%;
     }
 

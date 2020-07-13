@@ -116,15 +116,14 @@ window.onload = function() {
 
     var intersectionThreshold;
     var observer = new IntersectionObserver(function(entries) {
+
         entries.forEach(function(entry) {
+            if(!entry.target.dataset) console.log(entry.target)
             if (entry.intersectionRatio > 0) {
+                intersectionThreshold = entry.target.dataset.intersectionThreshold * 1 || 0.5;
 
-                intersectionThreshold = entry.target.dataset.intersectionThreshold * 1 || 0.3;
-
-                switch (entry.target.dataset.intersectionId) {
-                    case "exp_num": return animateNumbers(entry.target);
-                    default: return animatePosition(entry.target);
-                }
+                if (entry.target.dataset.intersectionId === "exp_num") return animateNumbers(entry.target);
+                return animatePosition(entry.target);
 
             }
         });

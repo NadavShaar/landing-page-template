@@ -19,9 +19,9 @@
                 </div>
                 <button class="menu" onclick="this.classList.toggle('opened');">
                     <svg width="32" height="32" viewBox="0 0 100 100">
-                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" ></path>
+                        <path class="line line2" d="M 20,50 H 80" ></path>
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" ></path>
                     </svg>
                 </button>
                 <ul class="flex_row menu_list">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </section>
-            <section id="tech" class="section tech_section flex_row">
+            <section id="tech" class="section tech_section">
                 <div class="section_inner tech_inner flex_row flex_column_mobile">
                     <div class="flex_column tech_left">
                         <div data-intersection-id="tech_decor_dots" data-intersection-threshold="0.3" class="tech_decor_dots start_pos"></div>
@@ -195,18 +195,18 @@
                 </div>
             </section>
             <section id="experience" data-intersection-id="experience" data-intersection-threshold="0.5" class="section exp_section background_image">
-                <svg class="exp_svg_divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+                <svg class="exp_svg_divider" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
                     <path fill="#f8fafc" fill-opacity="1" d="M0,96L120,106.7C240,117,480,139,720,144C960,149,1200,139,1320,133.3L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
                 </svg>
-                <div class="section_inner exp_inner flex_column">
-                    <div class="flex_column exp_info">
+                <div class="section_inner exp_inner">
+                    <div class="exp_info">
                         <h3 class="big_title start_pos">We got you covered</h3>
                         <p class="para text_center">
                             With a combined experience of over 30 years, there is no task we cannot handle.
                         </p>
                     </div>
                     <div class="flex_row flex_wrap">
-                        <div class="flex_column align_center exp_box">
+                        <div class="align_center exp_box">
                             <div class="flex_row">
                                 <span 
                                     data-intersection-id="exp_num" 
@@ -220,7 +220,7 @@
                             </div>
                             <span class="exp_topic">ReactJS</span>
                         </div>
-                        <div class="flex_column align_center exp_box">
+                        <div class="align_center exp_box">
                             <div class="flex_row">
                                 <span 
                                     data-intersection-id="exp_num" 
@@ -234,7 +234,7 @@
                             </div>
                             <span class="exp_topic">JavaScript | ES6</span>
                         </div>
-                        <div class="flex_column align_center exp_box">
+                        <div class="align_center exp_box">
                             <div class="flex_row">
                                 <span 
                                     data-intersection-id="exp_num" 
@@ -248,7 +248,7 @@
                             </div>
                             <span class="exp_topic">NodeJS</span>
                         </div>
-                        <div class="flex_column align_center exp_box">
+                        <div class="align_center exp_box">
                             <div class="flex_row">
                                 <span 
                                     data-intersection-id="exp_num" 
@@ -264,53 +264,53 @@
                         </div>
                     </div>
                 </div>
-                <svg class="exp_svg_divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <svg class="exp_svg_divider" preserveAspectRatio="xMaxYMax" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#ffffff" fill-opacity="1" d="M0,256L120,229.3C240,203,480,149,720,138.7C960,128,1200,160,1320,176L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
                 </svg>
             </section>
             <section id="about" class="section about_section">
                 <div class="section_inner about_inner flex_row">
-                    <div class="flex_column">
-                        <div class="flex_row flex_column_mobile">
-                            <div class="flex_row about_section_left">
-                                <svg data-intersection-id="about_shape" data-intersection-threshold="0.7" class="shape h-100 about_shape start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
+                    <div class="flex_row">
+                        <div class="flex_row about_section_left">
+                            <div class="about_shape start_pos" data-intersection-id="about_shape" data-intersection-threshold="0.7">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 249.28 253.71">
                                     <g id="Capa_2" data-name="Capa 2"><g id="OBJECTS"><path class="cls-1" d="M236.5,78.38a75.26,75.26,0,0,0-7.74-9.67l0,0S182.91,16.47,105.14,2l0,0A83.91,83.91,0,0,0,4.53,69.71C-11.34,147,19.55,209,19.73,209.4a75,75,0,0,0,6,10.77c19.06,28.33,54.33,39.57,86.73,30.43,0,0,52.47-12.9,111.35-71.37h0C251.68,152.56,257.84,110.1,236.5,78.38Z"></path></g></g>
                                 </svg>
-                                <div class="flex_column about_selected_member_container">
-                                    <img class="about_selected_member_avatar" src="./assets/team/yakov.jpg" />
-                                    <h3 class="text_block_main_title">Yakov Rakhamimov</h3>
-                                    <h3 class="text_block_sub_title">Front-End developer</h3>
-                                    <p class="para">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-                                    </p>
-                                    <div class="flex_row about_selected_member_social">   
-                                        <a herf="https://www.linkedin.com/in/rakhamimov/" target="_blank" class="about_social_icon">
-                                            <img src="./assets/social-icons/linkedin.svg" />
-                                        </a>
-                                    </div>
+                            </div>
+                            <div class="about_selected_member_container">
+                                <img class="about_selected_member_avatar" src="./assets/team/yakov.jpg" />
+                                <h3 class="text_block_main_title">Yakov Rakhamimov</h3>
+                                <h3 class="text_block_sub_title">Front-End developer</h3>
+                                <p class="para">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                </p>
+                                <div class="flex_row about_selected_member_social">   
+                                    <a herf="https://www.linkedin.com/in/rakhamimov/" target="_blank" class="about_social_icon">
+                                        <img src="./assets/social-icons/linkedin.svg" />
+                                    </a>
                                 </div>
                             </div>
-                            <div class="flex_column flex_column_reverse_mobile">
-                                <div class="flex_column about_info">
-                                    <h3 class="text_block_main_title">Who are we?</h3>
-                                    <h3 class="text_block_sub_title">The team behind the magic</h3>
-                                    <p class="para">
-                                        We are a team of veteran fullstack web developers, dedicated to building awesome applications
-                                        from A to Z.
-                                        An accumulative experience of over 30 years with various frameworks and libraries, and a full understanding of the needs
-                                        of modern web applications, gives us the tools to design, advise, build, test, deploy and maintain state-of-the-art web
-                                        applications for our clients.
-                                    </p>
-                                </div>
-                                <div class="about_map_wrapper">
-                                    <img class="about_map_img" src="./assets/map.svg" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_1 start_pos" src="./assets/team/ido.jpg" title="Ido Ofir" onclick="displayMember('Ido Ofir')" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_2 start_pos" src="./assets/team/nadav.jpg" title="Nadav Shaar" onclick="displayMember('Nadav Shaar')" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_3 start_pos" src="./assets/team/ilay.jpg" title="Ilay Ofir" onclick="displayMember('Ilay Ofir')" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_4 start_pos" src="./assets/team/yoav.jpg" title="Yoav Leshem" onclick="displayMember('Yoav Leshem')" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_5 start_pos" src="./assets/team/ziv.jpg" title="Ziv Zerr" onclick="displayMember('Ziv Zerr')" />
-                                        <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_6 about_team_img_bounce start_pos" src="./assets/team/yakov.jpg" title="Yakov Rakhamimov" onclick="displayMember('Yakov Rakhamimov')" />
-                                </div>
+                        </div>
+                        <div class="flex_column flex_column_reverse_mobile">
+                            <div class="about_info">
+                                <h3 class="text_block_main_title">Who are we?</h3>
+                                <h3 class="text_block_sub_title">The team behind the magic</h3>
+                                <p class="para">
+                                    We are a team of veteran fullstack web developers, dedicated to building awesome applications
+                                    from A to Z.
+                                    An accumulative experience of over 30 years with various frameworks and libraries, and a full understanding of the needs
+                                    of modern web applications, gives us the tools to design, advise, build, test, deploy and maintain state-of-the-art web
+                                    applications for our clients.
+                                </p>
+                            </div>
+                            <div class="about_map_wrapper">
+                                <img class="about_map_img" src="./assets/map.svg" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_1 start_pos" src="./assets/team/ido.jpg" title="Ido Ofir" onclick="displayMember('Ido Ofir')" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_2 start_pos" src="./assets/team/nadav.jpg" title="Nadav Shaar" onclick="displayMember('Nadav Shaar')" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_3 start_pos" src="./assets/team/ilay.jpg" title="Ilay Ofir" onclick="displayMember('Ilay Ofir')" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_4 start_pos" src="./assets/team/yoav.jpg" title="Yoav Leshem" onclick="displayMember('Yoav Leshem')" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_5 start_pos" src="./assets/team/ziv.jpg" title="Ziv Zerr" onclick="displayMember('Ziv Zerr')" />
+                                <img data-intersection-id="about_img" data-intersection-threshold="0.75" class="about_team_img about_team_img_6 about_team_img_bounce start_pos" src="./assets/team/yakov.jpg" title="Yakov Rakhamimov" onclick="displayMember('Yakov Rakhamimov')" />
                             </div>
                         </div>
                     </div>
@@ -338,9 +338,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex_column contact_right">
+                        <div class="contact_right">
                             <div class="flex_column contact_right_inner">
-                                <div class="flex_column contact_right_top">
+                                <div class="contact_right_top">
                                     <h3 class="text_block_main_title">Ready to take off?</h3>
                                     <h3 class="text_block_sub_title">Contact us</h3>
                                     <p class="para">
@@ -350,18 +350,24 @@
                                     </p>
                                 </div>
                                 <div class="flex_row clouds_container">
-                                    <svg data-intersection-id="cloud_1" data-intersection-threshold="0.75" class="cloud_1 start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                        <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"/>
-                                        <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"/>
-                                    </svg>
-                                    <svg data-intersection-id="cloud_2" data-intersection-threshold="0.75" class="cloud_2 start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                        <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"/>
-                                        <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"/>
-                                    </svg>
-                                    <svg data-intersection-id="cloud_3" data-intersection-threshold="0.75" class="cloud_3 start_pos" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
-                                        <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f8fafc;width: 100%;"/>
-                                        <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"/>
-                                    </svg>
+                                    <div class="cloud_1 start_pos" data-intersection-id="cloud_1" data-intersection-threshold="0.75">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
+                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"></path>
+                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cloud_2 start_pos" data-intersection-id="cloud_2" data-intersection-threshold="0.75">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
+                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f1f4f8;width: 100%;"></path>
+                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cloud_3 start_pos" data-intersection-id="cloud_3" data-intersection-threshold="0.75">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" style="height: 128px;width: 128px;">
+                                            <path d="M109.65,53.48c0,0-0.01,0-0.01,0c0-0.07,0.01-0.14,0.01-0.21c0-9.55-7.74-17.3-17.3-17.3 c-1.23,0-2.43,0.13-3.58,0.38c-3.43-8.34-11.62-14.22-21.2-14.22c-7.19,0-13.6,3.32-17.8,8.5c-2.71-1.37-5.76-2.16-9-2.16 c-10.35,0-18.85,7.88-19.84,17.97C9.68,47.04,0.65,56.26,0.5,67.71C0.34,79.63,9.89,89.43,21.81,89.58 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,61.25,119.24,53.48,109.65,53.48 z" style="fill:#f8fafc;width: 100%;"></path>
+                                            <path d="M119.85,56.79c3.93,3.97,1.15,13.07-1.55,16.04c-5.32,5.83-15.08,4.47-19,3.63 c-1.06-0.23-1.23-0.15-1.58,0.06c-0.31,0.19-0.45,0.49-0.79,1.2c-1.26,2.72-4.52,7.99-11.4,10.11c-7.17,2.21-13.93-1.16-17.09-3.17 c-1.2-0.76-1.25-0.78-1.79-0.77c-0.55,0.01-1.09,0.41-1.74,0.92c-2.86,2.25-9.39,6.22-19.46,5.64c-9.87-0.57-15.52-6.65-17.46-9.78 c-0.37-0.6-0.77-1.1-1.23-1.15c-0.53-0.05-1.12,0.49-1.56,0.93C21,84.54,7.78,85.77,3.4,78.8c4.46,7.15,11.35,10.69,18.42,10.78 c0.93,0.01,1.83-0.05,2.73-0.16c4.61,9.72,14.5,16.44,25.97,16.44c6.92,0,13.26-2.45,18.22-6.52c3.79,2.81,8.47,4.49,13.55,4.49 c10.42,0,19.19-6.99,21.92-16.54c1.72,0.57,3.55,0.89,5.46,0.89c9.58,0,17.35-7.77,17.35-17.35C127,65.73,124.44,59.97,119.85,56.79 z" style="fill:#B9CDD2;width: 100%;"></path>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
