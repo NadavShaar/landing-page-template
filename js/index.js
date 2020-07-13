@@ -105,11 +105,14 @@ window.onload = function() {
         end = target.dataset.animateNumberTo * 1 || 100,
         duration = target.dataset.animateNumberDuration * 1 || 2000,
         current = start,
+        currentNormalized = current,
         range = end - start,
         increment = range / duration * 10,
         timer = setInterval(function() {
             current += increment;
-            target.textContent = Math.floor(current);
+            current = Math.floor(current);
+            currentNormalized = current.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            target.textContent = currentNormalized;
             if (current >= end) clearInterval(timer);
         }, 10);
     }
