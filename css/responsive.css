@@ -678,6 +678,10 @@
                 flex: 0 0 auto;
     }
 
+    .contact_right {
+        flex: 0 0 auto;
+    }
+
     .contact_right_inner {
         -webkit-box-flex: 1;
             -ms-flex: 1;
@@ -913,10 +917,6 @@
     .about_selected_member_avatar {
         width: 60px;
         height: 60px;
-        margin-top: 5px;
-    }
-
-    .about_selected_member_social {
         margin-top: 5px;
     }
 

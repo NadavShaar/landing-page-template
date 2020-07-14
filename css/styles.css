@@ -1073,6 +1073,7 @@ a.contact_value {
 }
 
 .contact_right_inner {
+    width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -1157,9 +1158,12 @@ a.contact_value {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px 20px 0;
     border-top: 1px solid #e8ecf3;
     height: 60px;
+    text-align: center;
+    overflow: hidden;
+    opacity: .5;
 }
 
 /* =============== animations =============== */

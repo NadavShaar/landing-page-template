@@ -1,7 +1,7 @@
 var team = [
     {
         "name": "Ido Ofir",
-        "role": "Front-End Developer",
+        "role": "Full-Stack Developer",
         "img": "ido.jpg",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
         "socialLinks": [
@@ -27,7 +27,7 @@ var team = [
         "name": "Ilay Ofir",
         "role": "Full-Stack Developer",
         "img": "ilay.jpg",
-        "description": "Architecture, UI & data management. My friends for the last 4.5 years - React, Nodejs, MongoDB",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -51,7 +51,7 @@ var team = [
         "name": "Ziv Zerr",
         "role": "Full-Stack Developer",
         "img": "ziv.jpg",
-        "description": "Started as a Front-End Javascript / React.Js developer, continued as Node.js developer and currently operating as a Front-End team leader @ dooble.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
