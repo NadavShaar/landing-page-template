@@ -3,7 +3,7 @@ var team = [
         "name": "Ido Ofir",
         "role": "Full-Stack Developer",
         "img": "ido.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -43,7 +43,7 @@ var team = [
         "name": "Ilay Ofir",
         "role": "Full-Stack Developer",
         "img": "ilay.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -63,7 +63,7 @@ var team = [
         "name": "Yoav Leshem",
         "role": "Front-End Developer",
         "img": "yoav.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -83,7 +83,7 @@ var team = [
         "name": "Ziv Zerr",
         "role": "Full-Stack Developer",
         "img": "ziv.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -103,7 +103,7 @@ var team = [
         "name": "Yakov Rakhamimov",
         "role": "Front-End Developer",
         "img": "yakov.jpg",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
         "socialLinks": [
             {
                 "src": "linkedin.svg",
@@ -146,7 +146,7 @@ function displayMember(memberName) {
         newlink.setAttribute('class', 'about_social_icon');
         newlink.setAttribute('target', '_blank');
         newlink.setAttribute('href', sl.href);
-        newlink.append(linkImg);
+        newlink.appendChild(linkImg);
         document.querySelector('.about_selected_member_social').appendChild(newlink);
     })
 }
