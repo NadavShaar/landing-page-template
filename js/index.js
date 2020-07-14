@@ -7,7 +7,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/ido-ofir-5181b2a6/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     },
@@ -19,7 +27,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/nadav-shaar-551771139/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     },
@@ -31,7 +47,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/ilay-ofir-a9485bb0/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     },
@@ -43,7 +67,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/yoav-leshem-65ab1373/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     },
@@ -55,7 +87,15 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/ziv-zerr-95464924/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     },
@@ -67,14 +107,29 @@ var team = [
         "socialLinks": [
             {
                 "src": "linkedin.svg",
-                "href": "https://www.linkedin.com/in/rakhamimov/"
+                "href": "#"
+            },
+            {
+                "src": "pinterest.svg",
+                "href": "#"
+            },
+            {
+                "src": "facebook.svg",
+                "href": "#"
             }
         ]
     }
-]
+];
+
+var findIndex = function(arr, fn) {
+    return arr.reduce(function(carry, item, idx) { 
+        if(fn(item, idx)) return idx;
+        return carry;
+    }, -1);
+};
 
 function displayMember(memberName) {
-    var memberIndex = team.findIndex(function(m) {return m.name === memberName});
+    var memberIndex = findIndex(team, function(mn) { return mn.name === memberName });
     var member = team[memberIndex];
     document.querySelector('.about_selected_member_container .about_selected_member_avatar').src = "./assets/team/" + member.img;
     document.querySelector('.about_selected_member_container .text_block_main_title').innerHTML = member.name;
@@ -83,14 +138,17 @@ function displayMember(memberName) {
     document.querySelector('.about_team_img.about_team_img_bounce').classList.remove('about_team_img_bounce');
     document.querySelector('.about_team_img.about_team_img_' + (memberIndex + 1)).classList.add('about_team_img_bounce');
     document.querySelector('.about_selected_member_social').innerHTML = '';
-    var linkImg = document.createElement('img');
-    linkImg.setAttribute('src', './assets/social-icons/' + member.socialLinks[0].src);
-    var newlink = document.createElement('a');
-    newlink.setAttribute('class', 'about_social_icon');
-    newlink.setAttribute('target', '_blank');
-    newlink.setAttribute('href', member.socialLinks[0].href);
-    newlink.append(linkImg);
-    document.querySelector('.about_selected_member_social').appendChild(newlink);
+
+    member.socialLinks.forEach(function(sl) {
+        var linkImg = document.createElement('img');
+        linkImg.setAttribute('src', './assets/social-icons/' + sl.src);
+        var newlink = document.createElement('a');
+        newlink.setAttribute('class', 'about_social_icon');
+        newlink.setAttribute('target', '_blank');
+        newlink.setAttribute('href', sl.href);
+        newlink.append(linkImg);
+        document.querySelector('.about_selected_member_social').appendChild(newlink);
+    })
 }
 
 window.onload = function() {

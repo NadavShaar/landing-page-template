@@ -30,7 +30,7 @@ img {
 
 html, body {
     margin: 0;
-    /* height: 100%; */
+    height: 100%;
     font-family: Poppins,sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -39,7 +39,7 @@ html, body {
     text-align: left;
     background: #fff;
     overflow-x: hidden;
-    /* scroll-padding-top: 100px; */
+    scroll-padding-top: 8%;
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility!important;
     -webkit-font-smoothing: antialiased!important;
@@ -130,6 +130,7 @@ html, body {
 
 .main {
     display: block;
+    margin-top: -72px;
 }
 
 .section {
@@ -352,7 +353,8 @@ a.contact_value {
 /* === header === */
 
 .header {
-    position: absolute;
+    position: fixed; 
+    position: sticky;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -405,6 +407,10 @@ a.contact_value {
     margin: 0 auto;
     padding: 20px;
     height: 72px;
+}
+
+.menu_list {
+    flex: 0 0 auto;
 }
 
 .nav_item {
@@ -1164,6 +1170,16 @@ a.contact_value {
     text-align: center;
     overflow: hidden;
     opacity: .5;
+}
+
+.footer_logo {
+    opacity: 1;
+    -webkit-transition: opacity 1.75s ease-out .25s;
+    -o-transition: opacity 1.75s ease-out .25s;
+}
+
+.footer_logo.start_pos {
+    opacity: 0;
 }
 
 /* =============== animations =============== */

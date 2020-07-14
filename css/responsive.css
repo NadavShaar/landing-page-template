@@ -851,9 +851,17 @@
                 box-shadow: 0 0.5rem 1rem rgba(0,0,0,.25);
     }
 
+    .main {
+        margin-top: -62px;
+    }
+
     .nav {
         padding: 10px 20px;
         height: 62px;
+    }
+
+    .exp_info {
+        width: 85%;
     }
 }
 
@@ -862,6 +870,18 @@
         width: 90px;
         height: 90px;
         bottom: -20%;
+    }
+
+    .exp_info {
+        width: 100%;
+    }
+
+    .about_selected_member_social {
+        margin-top: 10px;
+    }
+
+    .about_social_icon {
+        width: 24px;
     }
 
     .para {
@@ -918,6 +938,7 @@
         width: 60px;
         height: 60px;
         margin-top: 5px;
+        margin-bottom: 5px
     }
 
     .about_section_left {
