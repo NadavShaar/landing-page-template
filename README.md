@@ -5,4 +5,4 @@
 Responsive dev-team landing page template.
 Supports IE11, Edge, Fire-fox and Chrome.
 
-Live at: https://nadavshaar.github.io/landing-page-template/
+Live [here](https://nadavshaar.github.io/landing-page-template/)
